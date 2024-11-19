@@ -1,0 +1,261 @@
+/* Reset de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* Fond dégradé */
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Container global */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container des options */
+.options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+/* Carte des options */
+.option-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.option-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Effet au survol des options */
+.option-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.afficher {
+    background-color: #ff9800;
+}
+
+.afficher:hover {
+    background-color: #f57c00;
+}
+
+.ajouter {
+    background-color: #2196F3;
+}
+
+.ajouter:hover {
+    background-color: #1976D2;
+}
+/* Reset global et box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style du body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* Fond dégradé */
+    color: #e8e1e1;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #080101;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteneur du formulaire */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Titres du formulaire */
+.modal-header {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #090303;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="radio"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border: 1px solid #4CAF50; /* Couleur au focus */
+}
+
+/* Sections du formulaire (radio et autres) */
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Boutons */
+input[type="reset"],
+input[type="submit"] {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Style pour le bouton "vider" */
+input[type="reset"] {
+    background-color: #ff5722;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #e64a19;
+}
+
+/* Style pour le bouton "ajouter" */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Lien retour à la liste des étudiants */
+a {
+    color: #4CAF50;
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Modal content style */
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal dialog style */
+.modal-dialog {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Centre le formulaire verticalement */
+.modal-body {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"] {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 1rem;
+    }
+}
+
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    .options-container {
+        grid-template-columns: 1fr;
+    }
+}
